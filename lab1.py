@@ -348,3 +348,20 @@ print("expensive" not in txt) #"not in" checks
 txt = "The best things in life are free!"
 if "expensive" not in txt:
   print("No, 'expensive' is NOT present.")
+
+
+#Slicing:
+b3 = "Hello, World!"
+print(b3[2:5])
+
+#Slice From the Start:
+b4 = "Hello, World!"
+print(b4[:5])
+
+#Slice To the End:
+b5 = "Hello, World!"
+print(b5[2:])
+
+#Negative Indexing (starts the slice from the end of the string):
+b6 = "Hello, World!"
+print(b6[-5:-2])
