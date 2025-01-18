@@ -107,3 +107,34 @@ Will be error:
 x14 = 5
 y14 = "John"
 print(x14, y14)
+
+#global variables:
+x15 = "awesome"
+
+def myfunc():
+  x15 = "fantastic"
+  print("Python is " + x15)
+
+myfunc()
+
+#the variable created in the function is local, but we can use "global" keyword to create a global variable inside the function
+print("Python is " + x15)
+
+def myfunc():
+  global x16
+  x16 = "fantastic"
+
+myfunc()
+
+print("Python is " + x16)
+
+#we can change the global variable inside the function:
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
