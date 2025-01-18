@@ -389,3 +389,16 @@ print(a11.replace("H", "J"))
 #The split() method splits the string into substrings if it finds instances of the separator:
 a12 = "Hello, World!"
 print(a12.split(",")) # returns ['Hello', ' World!']
+
+
+#String Concatenation.
+#To concatenate, or combine, two strings we can use the + operator.
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+#To add a space between them, add a " ":
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
