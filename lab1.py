@@ -9,3 +9,5 @@ if 5 > 2: #at least one space is required, 4 is the most commonly used. In the s
 
 x = 5 #variables
 y = "Hello, World!" #PYTHON Syntax
+
+"""comments may be like this. it will be ignored""" #PYTHON Comments
