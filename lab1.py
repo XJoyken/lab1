@@ -293,3 +293,58 @@ w24 = float("4.2") # w24 will be 4.2
 x25 = str("s1") # x25 will be 's1'
 y25 = str(2)    # y25 will be '2'
 z25 = str(3.0)  # z25 will be '3.0'
+
+
+#strings:
+print("Hello")
+print('Hello')
+
+#Quotes Inside Quotes. They should not be the same as the quotes surrounding the string:
+print("It's alright")
+print("He is called 'Johnny'")
+print('He is called "Johnny"')
+
+#Assign String to a Variable:
+a3 = "Hello"
+print(a3)
+
+#Multiline Strings:
+a4 = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a4)
+#or:
+a5 = '''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
+print(a5)
+
+#Strings are Arrays:
+a6 = "Hello, World!"
+print(a6[1])
+
+#Looping Through a String:
+for x in "banana":
+    print(x)
+
+#String Length:
+a7 = "Hello, World!"
+print(len(a7))
+
+#Check String:
+txt = "The best things in life are free!"
+print("free" in txt) #"in" checks
+#or:
+txt = "The best things in life are free!"
+if "free" in txt:
+    print("Yes, 'free' is present.")
+
+#Check if NOT:
+txt = "The best things in life are free!"
+print("expensive" not in txt) #"not in" checks
+#or:
+txt = "The best things in life are free!"
+if "expensive" not in txt:
+  print("No, 'expensive' is NOT present.")
