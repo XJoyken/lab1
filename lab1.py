@@ -266,3 +266,30 @@ print(type(c2))
 
 #Random Number:
 print(random.randrange(1, 10))
+
+
+#Python Casting:
+"""
+Casting in python is therefore done using constructor functions:
+
+int() - constructs an integer number from an integer literal, a float literal (by removing all decimals), or a string literal (providing the string represents a whole number)
+float() - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)
+str() - constructs a string from a wide variety of data types, including strings, integer literals and float literals
+
+"""
+
+#int:
+x23 = int(1)   # x23 will be 1
+y23 = int(2.8) # y23 will be 2
+z23 = int("3") # z23 will be 3
+
+#float:
+x24 = float(1)     # x24 will be 1.0
+y24 = float(2.8)   # y24 will be 2.8
+z24 = float("3")   # z24 will be 3.0
+w24 = float("4.2") # w24 will be 4.2
+
+#strings:
+x25 = str("s1") # x25 will be 's1'
+y25 = str(2)    # y25 will be '2'
+z25 = str(3.0)  # z25 will be '3.0'
