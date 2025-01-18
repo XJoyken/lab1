@@ -37,3 +37,24 @@ x6 = 'John'
 a = 4
 A = "Sally" #this is a constant
 #A will not overwrite a
+
+#Legal variable names:
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John" 
+#legal: (a-A, 0-9 (not in start), _)
+#variables are case-sensitive
+
+"""
+Illegal variable names:
+    2myvar = "John"
+    my-var = "John"
+    my var = "John" 
+"""
+
+#camel case: each word, except the first, stars with a capital letter (myVariableName = "John")
+#pascal case: each word stars with a capital letter (MyVariableName = "John")
+#snake case: each word is separated by an underscore character (my_variable_name = "John")
