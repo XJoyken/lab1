@@ -1,4 +1,5 @@
 import sys #PYTHON Get Started
+import random #PYTHON Numbers
 
 print("Hello, World!") #PYTHON HOME
 
@@ -129,15 +130,15 @@ myfunc()
 print("Python is " + x16)
 
 #we can change the global variable inside the function:
-x = "awesome"
+x17 = "awesome"
 
 def myfunc():
-  global x
-  x = "fantastic"
+  global x17
+  x17 = "fantastic"
 
 myfunc()
 
-print("Python is " + x)
+print("Python is " + x17)
 
 
 #Data types:
@@ -201,3 +202,67 @@ g11 = bool(5)
 g12 = bytes(5)
 g13 = bytearray(5)
 g14 = memoryview(bytes(5))
+
+
+#Python Numbers:
+#int (integer) is a whole number, positive or negative, without decimals, of unlimited length:
+x18 = 1
+y18 = 35656222554887711
+z18 = -3255522
+
+print(type(x18))
+print(type(y18))
+print(type(z18))
+
+#float (floating point number) is a number, positive or negative, containing one or more decimals:
+x19 = 1.10
+y19 = 1.0
+z19 = -35.59
+
+print(type(x19))
+print(type(y19))
+print(type(z19))
+
+#float can also be scientific numbers with an "e" to indicate the power of 10:
+x20 = 35e3
+y20 = 12E4
+z20 = -87.7e100
+
+print(type(x20))
+print(type(y20))
+print(type(z20))
+
+#complex numbers are written with a "j" as the imaginary part:
+x21 = 3+5j
+y21 = 5j
+z21 = -5j
+
+print(type(x21))
+print(type(y21))
+print(type(z21))
+
+#Type Conversion:
+x22 = 1    # int
+y22 = 2.8  # float
+z22 = 1j   # complex
+
+#convert from int to float:
+a2 = float(x22)
+
+#convert from float to int:
+b2 = int(y22)
+
+#convert from int to complex:
+c2 = complex(x22)
+
+print(a2)
+print(b2)
+print(c2)
+
+print(type(a2))
+print(type(b2))
+print(type(c2))
+#it cannot convert complex numbers into another number type
+
+#Random Number:
+print(random.randrange(1, 10))
