@@ -58,3 +58,22 @@ Illegal variable names:
 #camel case: each word, except the first, stars with a capital letter (myVariableName = "John")
 #pascal case: each word stars with a capital letter (MyVariableName = "John")
 #snake case: each word is separated by an underscore character (my_variable_name = "John")
+
+#Python allows to assign values to multiple variables in one line:
+x7, y7, z7 = "Orange", "Banana", "Cherry"
+print(x7)
+print(y7)
+print(z7)
+#Number of variables = number of values!
+
+x8 = y8 = z8 = "Orange"
+print(x8)
+print(y8)
+print(z8)
+
+#Unpacking:
+fruits = ["apple", "banana", "cherry"]
+x9, y9, z9 = fruits
+print(x9)
+print(y9)
+print(z9)
