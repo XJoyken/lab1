@@ -8,32 +8,32 @@ print(sys.version) #PYTHON Get Started
 if 5 > 2: #at least one space is required, 4 is the most commonly used. In the same block - the same number of spaces
     print("Five is greater than two!") #PYTHON Syntax
 
-x1 = 5 #variables
-y1 = "Hello, World!" #PYTHON Syntax
+x = 5 #variables
+y = "Hello, World!" #PYTHON Syntax
 
 """comments may be like this. it will be ignored""" #PYTHON Comments
 
-x2 = 5
-y2 = "John"
-print(x2)
-print(y2)
+x = 5
+y = "John"
+print(x)
+print(y)
 
-x3 = 4       # x3 is of type int
-x3 = "Sally" # x3 is now of type str
-print(x3)
+x = 4       # x is of type int
+x = "Sally" # x is now of type str
+print(x)
 
-x4 = str(3)    # x4 will be '3'
-y4 = int(3)    # y4 will be 3
-z4 = float(3)  # z4 will be 3.0
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
 
-x5 = 5
-y5 = "John"
-print(type(x5))
-print(type(y5))
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
 
-x6 = "John"
+x = "John"
 # is the same as
-x6 = 'John'
+x = 'John'
 
 a = 4
 A = "Sally" #this is a constant
@@ -56,46 +56,46 @@ Illegal variable names:
     my var = "John" 
 """
 
-#camel case: each word, except the first, stars with a capital letter (myVariableName = "John")
-#pascal case: each word stars with a capital letter (MyVariableName = "John")
+#camel case: each word, except the first, starts with a capital letter (myVariableName = "John")
+#pascal case: each word starts with a capital letter (MyVariableName = "John")
 #snake case: each word is separated by an underscore character (my_variable_name = "John")
 
 #Python allows to assign values to multiple variables in one line:
-x7, y7, z7 = "Orange", "Banana", "Cherry"
-print(x7)
-print(y7)
-print(z7)
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
 #Number of variables = number of values!
 
-x8 = y8 = z8 = "Orange"
-print(x8)
-print(y8)
-print(z8)
+x = y = z = "Orange"
+print(x)
+print(y)
+print(z)
 
 #Unpacking:
 fruits = ["apple", "banana", "cherry"]
-x9, y9, z9 = fruits
-print(x9)
-print(y9)
-print(z9)
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
 
 #Python output:
-x10 = "Python is awesome"
-print(x10)
+x = "Python is awesome"
+print(x)
 
-x11 = "Python"
-y11 = "is"
-z11 = "awesome"
-print(x11, y11, z11)
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
 
-x12 = "Python "
-y12 = "is "
-z12 = "awesome"
-print(x12 + y12 + z12)
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
 
-x13 = 5
-y13 = 10
-print(x13 + y13)
+x = 5
+y = 10
+print(x + y)
 
 """
 Will be error:
@@ -104,164 +104,164 @@ Will be error:
     print(x + y)
 """
 
-#the best way is t use commas:
-x14 = 5
-y14 = "John"
-print(x14, y14)
+#the best way is to use commas:
+x = 5
+y = "John"
+print(x, y)
 
 #global variables:
-x15 = "awesome"
+x = "awesome"
 
 def myfunc():
-  x15 = "fantastic"
-  print("Python is " + x15)
+  x = "fantastic"
+  print("Python is " + x)
 
 myfunc()
 
 #the variable created in the function is local, but we can use "global" keyword to create a global variable inside the function
-print("Python is " + x15)
+print("Python is " + x)
 
 def myfunc():
-  global x16
-  x16 = "fantastic"
+  global x
+  x = "fantastic"
 
 myfunc()
 
-print("Python is " + x16)
+print("Python is " + x)
 
 #we can change the global variable inside the function:
-x17 = "awesome"
+x = "awesome"
 
 def myfunc():
-  global x17
-  x17 = "fantastic"
+  global x
+  x = "fantastic"
 
 myfunc()
 
-print("Python is " + x17)
+print("Python is " + x)
 
 
 #Data types:
-t1 = "Hello World" #str
-print(t1)
+t = "Hello World" #str
+print(t)
 
-t2 = 20 #int
-print(t2)
+t = 20 #int
+print(t)
 
-t3 = 20.5 #float
-print(t3)
+t = 20.5 #float
+print(t)
 
-t4 = 1j #complex
-print(t4)
+t = 1j #complex
+print(t)
 
-t5 = ["apple", "banana", "cherry"] #list
-print(t5)
+t = ["apple", "banana", "cherry"] #list
+print(t)
 
-t6 = ("apple", "banana", "cherry") #tuple
-print(t6)
+t = ("apple", "banana", "cherry") #tuple
+print(t)
 
-t7 = range(6) #range
-print(t7)
+t = range(6) #range
+print(t)
 
-t8 = {"name" : "John", "age" : 36} #dict
-print(t8)
+t = {"name" : "John", "age" : 36} #dict
+print(t)
 
-t9 = {"apple", "banana", "cherry"} #set
-print(t9)
+t = {"apple", "banana", "cherry"} #set
+print(t)
 
-t10 = frozenset({"apple", "banana", "cherry"}) #frozenset
-print(t10)
+t = frozenset({"apple", "banana", "cherry"}) #frozenset
+print(t)
 
-t11 = True #bool
-print(t11)
+t = True #bool
+print(t)
 
-t12 = b"Hello" #bytes
-print(t12)
+t = b"Hello" #bytes
+print(t)
 
-t13 = bytearray(5) #bytearray
-print(t13)
+t = bytearray(5) #bytearray
+print(t)
 
-t14 = memoryview(bytes(5)) #memoryview
-print(t14)
+t = memoryview(bytes(5)) #memoryview
+print(t)
 
-t15 = None #NoneType
-print(t15)
+t = None #NoneType
+print(t)
 
 #Setting the Specific Data Type:
-g1 = str("Hello World")
-g2 = int(20)
-g3 = float(20.5)
-g4 = complex(1j)
-g5 = list(("apple", "banana", "cherry"))
-g6 = tuple(("apple", "banana", "cherry"))
-g7 = range(6)
-g8 = dict(name="John", age=36)
-g9 = set(("apple", "banana", "cherry"))
-g10 = frozenset(("apple", "banana", "cherry"))
-g11 = bool(5)
-g12 = bytes(5)
-g13 = bytearray(5)
-g14 = memoryview(bytes(5))
+g = str("Hello World")
+g = int(20)
+g = float(20.5)
+g = complex(1j)
+g = list(("apple", "banana", "cherry"))
+g = tuple(("apple", "banana", "cherry"))
+g = range(6)
+g = dict(name="John", age=36)
+g = set(("apple", "banana", "cherry"))
+g = frozenset(("apple", "banana", "cherry"))
+g = bool(5)
+g = bytes(5)
+g = bytearray(5)
+g = memoryview(bytes(5))
 
 
 #Python Numbers:
 #int (integer) is a whole number, positive or negative, without decimals, of unlimited length:
-x18 = 1
-y18 = 35656222554887711
-z18 = -3255522
+x = 1
+y = 35656222554887711
+z = -3255522
 
-print(type(x18))
-print(type(y18))
-print(type(z18))
+print(type(x))
+print(type(y))
+print(type(z))
 
 #float (floating point number) is a number, positive or negative, containing one or more decimals:
-x19 = 1.10
-y19 = 1.0
-z19 = -35.59
+x = 1.10
+y = 1.0
+z = -35.59
 
-print(type(x19))
-print(type(y19))
-print(type(z19))
+print(type(x))
+print(type(y))
+print(type(z))
 
 #float can also be scientific numbers with an "e" to indicate the power of 10:
-x20 = 35e3
-y20 = 12E4
-z20 = -87.7e100
+x = 35e3
+y = 12E4
+z = -87.7e100
 
-print(type(x20))
-print(type(y20))
-print(type(z20))
+print(type(x))
+print(type(y))
+print(type(z))
 
 #complex numbers are written with a "j" as the imaginary part:
-x21 = 3+5j
-y21 = 5j
-z21 = -5j
+x = 3+5j
+y = 5j
+z = -5j
 
-print(type(x21))
-print(type(y21))
-print(type(z21))
+print(type(x))
+print(type(y))
+print(type(z))
 
 #Type Conversion:
-x22 = 1    # int
-y22 = 2.8  # float
-z22 = 1j   # complex
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
 
 #convert from int to float:
-a2 = float(x22)
+a = float(x)
 
 #convert from float to int:
-b2 = int(y22)
+b = int(y)
 
 #convert from int to complex:
-c2 = complex(x22)
+c = complex(x)
 
-print(a2)
-print(b2)
-print(c2)
+print(a)
+print(b)
+print(c)
 
-print(type(a2))
-print(type(b2))
-print(type(c2))
+print(type(a))
+print(type(b))
+print(type(c))
 #it cannot convert complex numbers into another number type
 
 #Random Number:
@@ -279,20 +279,20 @@ str() - constructs a string from a wide variety of data types, including strings
 """
 
 #int:
-x23 = int(1)   # x23 will be 1
-y23 = int(2.8) # y23 will be 2
-z23 = int("3") # z23 will be 3
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
 
 #float:
-x24 = float(1)     # x24 will be 1.0
-y24 = float(2.8)   # y24 will be 2.8
-z24 = float("3")   # z24 will be 3.0
-w24 = float("4.2") # w24 will be 4.2
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
 
 #strings:
-x25 = str("s1") # x25 will be 's1'
-y25 = str(2)    # y25 will be '2'
-z25 = str(3.0)  # z25 will be '3.0'
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
 
 
 #strings:
@@ -305,33 +305,33 @@ print("He is called 'Johnny'")
 print('He is called "Johnny"')
 
 #Assign String to a Variable:
-a3 = "Hello"
-print(a3)
+a = "Hello"
+print(a)
 
 #Multiline Strings:
-a4 = """Lorem ipsum dolor sit amet,
+a = """Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua."""
-print(a4)
+print(a)
 #or:
-a5 = '''Lorem ipsum dolor sit amet,
+a = '''Lorem ipsum dolor sit amet,
 consectetur adipiscing elit,
 sed do eiusmod tempor incididunt
 ut labore et dolore magna aliqua.'''
-print(a5)
+print(a)
 
 #Strings are Arrays:
-a6 = "Hello, World!"
-print(a6[1])
+a = "Hello, World!"
+print(a[1])
 
 #Looping Through a String:
 for x in "banana":
     print(x)
 
 #String Length:
-a7 = "Hello, World!"
-print(len(a7))
+a = "Hello, World!"
+print(len(a))
 
 #Check String:
 txt = "The best things in life are free!"
@@ -351,44 +351,44 @@ if "expensive" not in txt:
 
 
 #Slicing:
-b3 = "Hello, World!"
-print(b3[2:5])
+b = "Hello, World!"
+print(b[2:5])
 
 #Slice From the Start:
-b4 = "Hello, World!"
-print(b4[:5])
+b = "Hello, World!"
+print(b[:5])
 
 #Slice To the End:
-b5 = "Hello, World!"
-print(b5[2:])
+b = "Hello, World!"
+print(b[2:])
 
 #Negative Indexing (starts the slice from the end of the string):
-b6 = "Hello, World!"
-print(b6[-5:-2])
+b = "Hello, World!"
+print(b[-5:-2])
 
 
 #Modify strings:
 #Upper Case:
-a8 = "Hello, World!"
-print(a8.upper())
+a = "Hello, World!"
+print(a.upper())
 
 #Lower Case:
-a9 = "Hello, World!"
-print(a9.lower())
+a = "Hello, World!"
+print(a.lower())
 
 #Remove Whitespace (Whitespace is the space before and/or after the actual text).
 #The strip() method removes any whitespace from the beginning or the end:
-a10 = " Hello, World! "
-print(a10.strip()) # returns "Hello, World!"
+a = " Hello, World! "
+print(a.strip()) # returns "Hello, World!"
 
 #Replace String (The replace() method replaces a string with another string):
-a11 = "Hello, World!"
-print(a11.replace("H", "J"))
+a = "Hello, World!"
+print(a.replace("H", "J"))
 
 #Split String (The split() method returns a list where the text between the specified separator becomes the list items).
 #The split() method splits the string into substrings if it finds instances of the separator:
-a12 = "Hello, World!"
-print(a12.split(",")) # returns ['Hello', ' World!']
+a = "Hello, World!"
+print(a.split(",")) # returns ['Hello', ' World!']
 
 
 #String Concatenation.
