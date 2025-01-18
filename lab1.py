@@ -138,3 +138,66 @@ def myfunc():
 myfunc()
 
 print("Python is " + x)
+
+
+#Data types:
+t1 = "Hello World" #str
+print(t1)
+
+t2 = 20 #int
+print(t2)
+
+t3 = 20.5 #float
+print(t3)
+
+t4 = 1j #complex
+print(t4)
+
+t5 = ["apple", "banana", "cherry"] #list
+print(t5)
+
+t6 = ("apple", "banana", "cherry") #tuple
+print(t6)
+
+t7 = range(6) #range
+print(t7)
+
+t8 = {"name" : "John", "age" : 36} #dict
+print(t8)
+
+t9 = {"apple", "banana", "cherry"} #set
+print(t9)
+
+t10 = frozenset({"apple", "banana", "cherry"}) #frozenset
+print(t10)
+
+t11 = True #bool
+print(t11)
+
+t12 = b"Hello" #bytes
+print(t12)
+
+t13 = bytearray(5) #bytearray
+print(t13)
+
+t14 = memoryview(bytes(5)) #memoryview
+print(t14)
+
+t15 = None #NoneType
+print(t15)
+
+#Setting the Specific Data Type:
+g1 = str("Hello World")
+g2 = int(20)
+g3 = float(20.5)
+g4 = complex(1j)
+g5 = list(("apple", "banana", "cherry"))
+g6 = tuple(("apple", "banana", "cherry"))
+g7 = range(6)
+g8 = dict(name="John", age=36)
+g9 = set(("apple", "banana", "cherry"))
+g10 = frozenset(("apple", "banana", "cherry"))
+g11 = bool(5)
+g12 = bytes(5)
+g13 = bytearray(5)
+g14 = memoryview(bytes(5))
