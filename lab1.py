@@ -365,3 +365,27 @@ print(b5[2:])
 #Negative Indexing (starts the slice from the end of the string):
 b6 = "Hello, World!"
 print(b6[-5:-2])
+
+
+#Modify strings:
+#Upper Case:
+a8 = "Hello, World!"
+print(a8.upper())
+
+#Lower Case:
+a9 = "Hello, World!"
+print(a9.lower())
+
+#Remove Whitespace (Whitespace is the space before and/or after the actual text).
+#The strip() method removes any whitespace from the beginning or the end:
+a10 = " Hello, World! "
+print(a10.strip()) # returns "Hello, World!"
+
+#Replace String (The replace() method replaces a string with another string):
+a11 = "Hello, World!"
+print(a11.replace("H", "J"))
+
+#Split String (The split() method returns a list where the text between the specified separator becomes the list items).
+#The split() method splits the string into substrings if it finds instances of the separator:
+a12 = "Hello, World!"
+print(a12.split(",")) # returns ['Hello', ' World!']
