@@ -432,3 +432,38 @@ print(txt)
 #A placeholder can contain Python code, like math operations:
 txt = f"The price is {20 * 59} dollars"
 print(txt)
+
+
+#Escape Character.
+"""
+To insert characters that are illegal in a string, use an escape character.
+An escape character is a backslash \ followed by the character you want to insert.
+An example of an illegal character is a double quote inside a string that is surrounded by double quotes:
+"""
+#error:
+#txt = "We are the so-called "Vikings" from the north."
+
+#not an error:
+txt = "We are the so-called \"Vikings\" from the north."
+print(txt)
+
+#Escape Characters:
+
+#\' 	Single Quote 	
+print(f"\'")
+#\\ 	Backslash 
+print(f"\\")	
+#\n 	New Line
+print(f"a-\n-b") 	
+#\r 	Carriage Return 	
+print("Hello-\r-World!")
+#\t 	Tab 	
+print("Hello-\t-World!")
+#\b 	Backspace 	
+print("Hello-\b-World!")
+#\f 	Form Feed 	
+print("Hello-\f-World!")
+#\ooo 	Octal value (A backslash followed by three integers will result in a octal value)	
+print("\"\110\145\154\154\157\" in a octal value")
+#\xhh 	Hex value (A backslash followed by an 'x' and a hex number represents a hex value)
+print("\"\x48\x65\x6c\x6c\x6f\" in a hex value")
