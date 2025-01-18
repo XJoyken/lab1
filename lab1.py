@@ -77,3 +77,33 @@ x9, y9, z9 = fruits
 print(x9)
 print(y9)
 print(z9)
+
+#Python output:
+x10 = "Python is awesome"
+print(x10)
+
+x11 = "Python"
+y11 = "is"
+z11 = "awesome"
+print(x11, y11, z11)
+
+x12 = "Python "
+y12 = "is "
+z12 = "awesome"
+print(x12 + y12 + z12)
+
+x13 = 5
+y13 = 10
+print(x13 + y13)
+
+"""
+Will be error:
+    x = 5
+    y = "John"
+    print(x + y)
+"""
+
+#the best way is t use commas:
+x14 = 5
+y14 = "John"
+print(x14, y14)
